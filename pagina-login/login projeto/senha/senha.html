@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="senha.css">
+    <title>herba login</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Esqueceu a senha?</h1>
+        <form id="formulario">
+            <h2>insira o email registrado que enviaremos um codigo para recuperar a senha</h2>
+            <div class="input-box">
+                <input type="email" placeholder="Usuário" required id="email_usuario">
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <button type="submit" class="Login">submit</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            var nome = document.getElementById('email_usuario').value;
+
+            if (nome.trim() !== "") {
+                window.location.href = "../codigo/codigo.html"; 
+            } else {
+                alert("Por favor, preencha o campo antes de continuar.");
+            }
+        });
+    </script>
+</body>
+</html>
