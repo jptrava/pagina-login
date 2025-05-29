@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Chat em Tempo Real - Tema Claro/Escuro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../static/styles/style.css" />
+    <script src="../static/scripts/script.js" defer></script>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+    <header>
+        <span></span>
+        <h1>Whatsapp 2</h1>
+        <button id="themeToggleBtn" aria-label="Alternar tema">Modo Escuro</button>
+    </header>
+
+    <div id="chat"></div>
+
+    <form id="form" onsubmit="return false;">
+        <input id="messageInput" placeholder="Digite sua mensagem..." autocomplete="off" />
+        <button id="sendBtn">Enviar</button>
+    </form>
+
+</body>
+</html>
